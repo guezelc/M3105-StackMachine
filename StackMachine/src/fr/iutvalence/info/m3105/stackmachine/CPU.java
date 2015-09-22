@@ -31,7 +31,7 @@ public class CPU
 	
 	// TODO something is missing here...
 
-	public void run()
+	public void run(int opCode)
 	{
 		try
 		{
@@ -39,7 +39,7 @@ public class CPU
 			{
 				// TODO something is missing here...
 
-				// System.err.print("@" + this.programCounter + ": ");
+				//System.err.print("@" + this.programCounter + ": ");
 				switch (opCode)
 				{
 					case HALT:
@@ -163,7 +163,7 @@ public class CPU
 		}
 		catch (AddressOutOfBoundsException e)
 		{
-			
+			// TODO something is missing here...
 		}
 		catch (IOException e)
 		{
